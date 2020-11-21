@@ -1,0 +1,15 @@
+body{
+    font-size: 10px;
+}
+span{
+    font-size: 50px;
+    @media  (max-width:767px) {
+        font-size: 24px;
+    }
+}
+div{
+    font-size: 50px;
+    @media  (max-width:767px) {
+        font-size: 24px;
+    }
+}

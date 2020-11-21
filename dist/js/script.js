@@ -1,0 +1,1 @@
+const{images:images}=require("../../gulpfile");
