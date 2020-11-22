@@ -4,6 +4,7 @@ body{
     font-size: 60px;
     background-color: black;
     font-weight: 900;
+    letter-spacing: 5px;
 
 }
 .logo{
@@ -11,9 +12,13 @@ body{
      @media (max-width: 767px){
          width: 60px;
          height: 14px;
+<<<<<<< HEAD
          background-color: green;
          color: red;
          font-weight: bold;
+=======
+         background-color: blue;
+>>>>>>> af2faa8c9b19be43e8abc592df78999850fa2ffb
      }
  }
  .header{
