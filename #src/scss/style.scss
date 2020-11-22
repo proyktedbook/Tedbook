@@ -1,16 +1,18 @@
 body{
     background-color: grey;
     color: red;
-    font-size: 30px;
+    font-size: 60px;
     background-color: black;
     font-weight: 900;
     letter-spacing: 5px;
+
 }
 .logo{
 
      @media (max-width: 767px){
          width: 60px;
          height: 14px;
+         background-color: blue;
      }
  }
  .header{
