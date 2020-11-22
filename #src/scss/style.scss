@@ -5,6 +5,9 @@ body{
     background-color: black;
     font-weight: 900;
     letter-spacing: 5px;
+    display: block;
+    color: blue;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 
 }
 .logo{
