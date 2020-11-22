@@ -1,4 +1,9 @@
- .logo{
+body{
+    background-color: grey;
+    color: red;
+    font-size: 30px;
+}
+.logo{
 
      @media (max-width: 767px){
          width: 60px;

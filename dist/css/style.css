@@ -1,3 +1,8 @@
+body {
+  background-color: grey;
+  color: red;
+}
+
 .header {
   background: url("../img/Fon.png") no-repeat center center/cover;
   width: 100%;
