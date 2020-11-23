@@ -113,6 +113,9 @@ body{
         font-size: calc(15px + (25+25 *0.7) *((100vw - 320px)/1280));
     }
 }
+// .section_two_block{
+//     margin-bottom: 100px;
+// }
 .chegirma {
     color: #ffc107;
     font-weight: 900;
@@ -143,6 +146,117 @@ body{
     max-width: 100%;
     height: auto;
 }
+.tedbook_eng{
+    position: relative;
+    left: 140px;
+}
+// .section_two_books{
+//     // margin-left: 100px;
+// }
+.section_two_books_block{
+    background: url(../img/orbita-1.png) no-repeat center center ;
+    background-size: cover;
+    background-position: center;
+    // width: 1900px;
+    // position: relative;
+    // top: 300px;
+}
+
+
+
+.section_tree_audio{
+    color: #212529;
+    font-size: 43px;
+    font-weight: 900;
+    @media  (max-width:767px) {
+        font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+    }
+}
+del ,.section_three_narx{
+    color: #5D5D5D;
+    font-size: 43px;
+    font-weight: 500;
+    @media  (max-width:767px) {
+        font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_three h1{
+    color: #212529;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 1.5em;
+    @media  (max-width:767px) {
+        font-size: calc(20px + (42+42 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_three_chegirma{
+    color: #31C407;
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.5em;
+    @media  (max-width:767px) {
+        font-size: calc(20px + (42+42 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_three_foyda{
+    color: #212529;
+    font-family: "Roboto",Sans-serif;
+    font-size: 43px;
+    font-weight: 900;
+    line-height: 1.5em;
+    @media  (max-width:767px) {
+        font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+    }
+
+}
+
+// .section-time-group {
+//     display: flex;
+//     margin-left: 50px;
+// }
+
+.section_time_shoshiling{
+    color: #212529;
+    font-family: "Roboto",Sans-serif;
+    font-size: 53px;
+    font-weight: 900;
+    line-height: .6em;
+    @media  (max-width:767px) {
+        font-size: calc(17px + (36+36 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_time_chegirma{
+    color: #5D5D5D;
+    font-family: "Roboto",Sans-serif;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 1.5em;
+    @media  (max-width:767px) {
+        font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_times h1{
+    color: #212529;
+    font-family: "Roboto",Sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    @media  (max-width:767px) {
+        font-size: calc(25px + (55+55 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_times span{
+    color: #212529;
+    font-family: "Roboto",Sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    @media  (max-width:767px) {
+        font-size: calc(10px + (9+9 *0.7) *((100vw - 320px)/1280));
+    }
+}
+.section_time {
+    border: 2px solid #BFBFBF;
+    border-radius: 30px;
+}
 // .kurs{
 //     @media  (max-width:320px) {
 //         font-size: calc(15px + (25+25 *0.7) *((100vw - 320px)/1280));
@@ -155,3 +269,4 @@ body{
 //         justify-content: center;
 //     }
 // }
+
