@@ -1,8 +1,14 @@
 body {
   background-color: grey;
   color: red;
-  font-size: 30px;
+  font-size: 60px;
   background-color: black;
+  font-weight: 900;
+  letter-spacing: 5px;
+  display: block;
+  color: blue;
+  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .header {
@@ -15,5 +21,10 @@ body {
   .logo {
     width: 60px;
     height: 14px;
+    background-color: green;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background-color: blue;
   }
 }
