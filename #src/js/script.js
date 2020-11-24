@@ -1,6 +1,6 @@
 const { images } = require("../../gulpfile");
 
-// @@include('alert.js')
+@@include('alert.js')
 // function testWebp(callback) {
 //     var webP =new images();
 //     webP.onload=webP.onerror =function(){

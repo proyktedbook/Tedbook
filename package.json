@@ -1,5 +1,7 @@
 {
-  "name": "newww",
+
+  "name": "tedbook",
+
   "version": "1.0.0",
   "description": "tedbook gulp",
   "main": "index.html",

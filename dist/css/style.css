@@ -3,52 +3,84 @@ body {
 }
 
 .container-fluid {
-  border: 1px solid red;
-  margin: 0 auto;
+  height: 8000px;
   overflow: hidden;
-  height: 2000px;
 }
 
-.header {
-  width: inherit;
-  height: 720px;
-  background-image: url("../img/header_bg.jpg");
-  background-size: contain;
+.compania {
+  height: 900px;
+  background-image: url("../img/comp-bg-1.jpg");
   background-repeat: no-repeat;
-  margin-left: -40px;
-}
-
-.book {
-  height: 600px;
+  background-size: cover;
+  background-position: -40px;
+  margin-left: -100px;
+  overflow: hidden;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.book img {
-  width: 600px;
-  height: 600px;
+li {
+  list-style: none;
 }
 
-.logo_header {
-  position: absolute;
-  right: 4%;
-  top: 1%;
+.comp_1 {
+  position: relative;
+  left: 25%;
+  width: 800px;
+  height: 800px;
+  background-image: url("../img/sariq-ramka.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.logo_header img {
-  width: 200px;
-  height: 50px;
+.comp_1 .fas::before {
+  content: "\f00c";
+  color: white;
+}
+
+.comp_1 p:nth-child(4) {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.comp_1 p:first-child {
+  margin-top: 10%;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.comp_1 p,
+.comp_1 ul {
+  margin-left: 10%;
+  width: 550px;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.comp_1 p .margin,
+.comp_1 ul .margin {
+  margin-top: 20px;
+}
+
+.comp_1 ul {
+  margin-left: 5%;
 }
 
 .section-title h1 {
@@ -96,6 +128,10 @@ body {
   font-weight: 500;
 }
 
+.section_one_block {
+  text-align: center;
+}
+
 .section_one_bottom {
   margin-top: 50px;
   margin-bottom: 150px;
@@ -137,6 +173,222 @@ body {
   height: auto;
 }
 
+.tedbook_eng {
+  position: relative;
+  left: 140px;
+}
+
+.section_two_books {
+  width: 1000px;
+  height: 500px;
+}
+
+.section_two_books_block {
+  background: url(../img/orbita-1.png) no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_tree_audio {
+  color: #212529;
+  font-size: 43px;
+  font-weight: 900;
+}
+
+del,
+.section_three_narx {
+  color: #5D5D5D;
+  font-size: 43px;
+  font-weight: 500;
+}
+
+.section_three h1 {
+  color: #212529;
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.section_three_chegirma {
+  color: #31C407;
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.section_three_foyda {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+.section_time_shoshiling {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 53px;
+  font-weight: 900;
+  line-height: .6em;
+}
+
+.section_time_chegirma {
+  color: #5D5D5D;
+  font-family: "Roboto",Sans-serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.section_times h1 {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.section_times span {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.section_time {
+  border: 2px solid #BFBFBF;
+  border-radius: 30px;
+}
+
+@media (max-width: 1486px) {
+  .comp_1 {
+    left: 20%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section_two_books_block {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1206px) {
+  .comp_1 {
+    width: 700px !important;
+    left: 20%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section_two_books_block {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section_two_books_block {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1086px) {
+  .comp_1 {
+    width: 700px !important;
+    left: 15%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section_two_books {
+    width: 500px;
+  }
+
+  .tedbook_eng,
+  .tedbook_rus {
+    width: 250px;
+  }
+
+  .section_two_books_block {
+    width: 1000px;
+    height: 1000px;
+    background-size: cover;
+    background-position: -600px;
+  }
+}
+
+@media (max-width: 986px) {
+  .compania {
+    height: 900px;
+  }
+
+  .comp_1 {
+    width: 650px !important;
+    top: 32%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .section_two_books_block {
+    background-size: cover;
+    width: 900px;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 886px) {
+  .compania {
+    height: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section_two_books_block {
+    width: 800px;
+    height: 900px;
+    background-position: -400px;
+  }
+}
+
+@media (max-width: 786px) {
+  .compania {
+    height: 700px;
+  }
+
+  .comp_1 {
+    width: 600px !important;
+    top: 30%;
+    left: 10%;
+  }
+
+  .comp_1 p .margin,
+  .comp_1 ul .margin {
+    margin: 0;
+  }
+
+  .comp_1 p,
+  .comp_1 ul {
+    width: 500px;
+  }
+}
+
 @media (max-width: 767px) {
   .section-title h1 {
     font-size: calc(24px + (46+46 *0.7) *((100vw - 320px)/1280));
@@ -171,6 +423,102 @@ body {
   .QULOCHINGA {
     font-size: calc(15px + (25+25 *0.7) *((100vw - 320px)/1280));
   }
+
+  .section_tree_audio {
+    font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+  }
+
+  del,
+  .section_three_narx {
+    font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_three h1 {
+    font-size: calc(20px + (42+42 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_three_chegirma {
+    font-size: calc(20px + (42+42 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_three_foyda {
+    font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_time_shoshiling {
+    font-size: calc(17px + (36+36 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_time_chegirma {
+    font-size: calc(15px + (28+28 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_times h1 {
+    font-size: calc(25px + (55+55 *0.7) *((100vw - 320px)/1280));
+  }
+
+  .section_times span {
+    font-size: calc(10px + (9+9 *0.7) *((100vw - 320px)/1280));
+  }
+}
+
+@media (max-width: 700px) {
+  .section_two_books_block {
+    width: 700px;
+    height: 700px;
+    background-position: -300px;
+  }
+}
+
+@media (max-width: 686px) {
+  .compania {
+    height: 500px;
+  }
+
+  .comp_1 {
+    width: 450px !important;
+    height: 600px;
+    top: 25%;
+    left: 10%;
+  }
+
+  .comp_1 p,
+  .comp_1 ul {
+    width: 400px;
+    font-size: 14px;
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section_two_books_block {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 586px) {
+  .comp_1 {
+    width: 400px !important;
+    height: 400px;
+    left: 15%;
+    top: 20%;
+  }
+
+  .comp_1 p:nth-child(4) {
+    font-size: 18px;
+  }
+
+  .comp_1 p:first-child {
+    font-size: 28px;
+  }
+
+  .comp_1 p,
+  .comp_1 ul {
+    width: 300px;
+    font-size: 12px;
+    margin-top: -5px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -180,6 +528,36 @@ body {
 
   .span {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_two_books {
+    width: 400px;
+    margin-top: 80px;
+  }
+
+  .tedbook_eng,
+  .tedbook_rus {
+    width: 200px;
+  }
+
+  .section_two_books_block {
+    width: 500px;
+  }
+}
+
+@media (max-width: 486px) {
+  .compania {
+    width: 580px !important;
+    height: 580px;
+  }
+
+  .comp_1 {
+    width: 420px !important;
+    height: 800px;
+    top: 30%;
+    left: 10%;
   }
 }
 
@@ -198,6 +576,28 @@ body {
   .span {
     font-size: 18px;
     width: 181px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section_two_books_block {
+    width: 410px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 386px) {
+  .compania {
+    height: 580px;
+    width: 480px !important;
+  }
+
+  .comp_1 {
+    width: 380px !important;
+    height: 580px;
+    top: 45%;
+    left: 10%;
+    background-size: 100%;
   }
 }
 
