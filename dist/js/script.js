@@ -1,1 +1,1 @@
-const{images:images}=require("../../gulpfile");
+$(document).ready((function(){$("#phone").mask("+(999) 99-999-99-99")}));
