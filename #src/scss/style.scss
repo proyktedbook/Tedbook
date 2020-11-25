@@ -57,7 +57,7 @@ body{
     background-position: -40px;
     margin-left: -100px;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     @include center;
     // @media (max-width:836px){
     //     width: 836px !important;
@@ -75,12 +75,20 @@ body{
         height: 500px;
     }
     @media (max-width:486px){
-        width: 580px !important;
+        width: 500px !important;
         height: 580px;
     }
     @media (max-width:386px){
         height: 580px;
-        width: 480px !important;
+        width: 470px !important;
+    }
+    @media (max-width:350px){
+        height: 580px;
+        width: 400px !important;
+    }
+    @media (max-width:286px){
+        height: 580px;
+        width: 360px !important;
     }
 
 }
@@ -200,7 +208,44 @@ li{
 }
 
 
-
+.muammo{
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+    text-align: center;
+    @include column;
+    p{
+        color: #212529;
+        font-family: "Roboto",Sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.5em;
+        @media (max-width:800px){
+            font-size: 33px;
+        }
+        @media (max-width:600px){
+            font-size: 23px;
+        }
+        @media (max-width:400px){
+            font-size: 18px;
+        }
+    }
+    .muammo_block{
+        width: 90%;
+        height: 600px;
+        border: 1px solid black;
+        @include row;
+        p{
+            @include row;
+            width: 400px;
+            color: #212529;
+            font-family: "Roboto",Sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5em;
+        }
+    }
+}
 
 
 
@@ -528,20 +573,21 @@ li{
 .section_two_books{
     width: 1000px;
     height: 500px;
-    @media (max-width:1000px){
-        width: 500px;
-    }
+    margin-left: -150px;
+    margin-top: -40px;  
     @media (max-width:500px){
-        width: 400px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 }
 .tedbook_eng ,.tedbook_rus{
     @media (max-width:1000px){
-        width: 250px;
+        width: 350px;
     }
     @media (max-width:500px){
-        width: 200px;
+        width: 300px;
+    }
+    @media (max-width:400px){
+        width: 250px;
     }
 
 }
@@ -550,56 +596,16 @@ li{
     background: url(../img/orbita-1.png) no-repeat;
     background-position: center;
     height: 800px;
-    width: 100%;
+    width: 120%;
     background-size: cover;
-    background-position:left;
     margin-top: 20px;
-    @include center;
-
-    @media (max-width:1300px){
-        width: 1300px;
-    }
-    @media (max-width:1200px){
-        width: 1200px;
-    }
-    @media (max-width:1100px){
-        width: 1100px;
-    }
-    @media (max-width:1000px){
-        width: 1000px;
-        height: 1000px;
-        background-size: cover;
-        background-position: -600px;
-            
-    }
-    @media (max-width:900px){
-        background-size: cover;
-        width: 900px;
-        height: 1000px;
-    }
-    @media (max-width:800px){
-        width: 800px;
-        height: 900px;
-        background-position: -400px;
-    }
-    @media (max-width:700px){
-        width: 700px;
-        height: 700px;
-        background-position: -300px;
-    }
-    @media (max-width:600px){
-        width: 600px;
-        height: 600px;
-    }
-    @media (max-width:500px){
-        width: 500px;
-    }
-    @media (max-width:400px){
-        width: 410px;
-        background-size: cover;
-    }
+    margin-left: -20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
 }
-
 
 
 

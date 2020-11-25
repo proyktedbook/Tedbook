@@ -15,7 +15,7 @@ body {
   background-position: -40px;
   margin-left: -100px;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +81,75 @@ li {
 
 .comp_1 ul {
   margin-left: 5%;
+}
+
+.muammo {
+  width: 100%;
+  height: 800px;
+  border: 1px solid red;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.muammo p {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+.muammo .muammo_block {
+  width: 90%;
+  height: 600px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.muammo .muammo_block p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 400px;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
 .section-title h1 {
@@ -181,16 +250,19 @@ li {
 .section_two_books {
   width: 1000px;
   height: 500px;
+  margin-left: -150px;
+  margin-top: -40px;
 }
 
 .section_two_books_block {
   background: url(../img/orbita-1.png) no-repeat;
   background-position: center;
   height: 800px;
-  width: 100%;
+  width: 120%;
   background-size: cover;
-  background-position: left;
   margin-top: 20px;
+  margin-left: -20px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,12 +270,12 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .section_tree_audio {
@@ -283,28 +355,10 @@ del,
   }
 }
 
-@media (max-width: 1300px) {
-  .section_two_books_block {
-    width: 1300px;
-  }
-}
-
 @media (max-width: 1206px) {
   .comp_1 {
     width: 700px !important;
     left: 20%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .section_two_books_block {
-    width: 1200px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .section_two_books_block {
-    width: 1100px;
   }
 }
 
@@ -316,20 +370,9 @@ del,
 }
 
 @media (max-width: 1000px) {
-  .section_two_books {
-    width: 500px;
-  }
-
   .tedbook_eng,
   .tedbook_rus {
-    width: 250px;
-  }
-
-  .section_two_books_block {
-    width: 1000px;
-    height: 1000px;
-    background-size: cover;
-    background-position: -600px;
+    width: 350px;
   }
 }
 
@@ -345,14 +388,6 @@ del,
   }
 }
 
-@media (max-width: 900px) {
-  .section_two_books_block {
-    background-size: cover;
-    width: 900px;
-    height: 1000px;
-  }
-}
-
 @media (max-width: 886px) {
   .compania {
     height: 800px;
@@ -360,10 +395,8 @@ del,
 }
 
 @media (max-width: 800px) {
-  .section_two_books_block {
-    width: 800px;
-    height: 900px;
-    background-position: -400px;
+  .muammo p {
+    font-size: 33px;
   }
 }
 
@@ -462,14 +495,6 @@ del,
   }
 }
 
-@media (max-width: 700px) {
-  .section_two_books_block {
-    width: 700px;
-    height: 700px;
-    background-position: -300px;
-  }
-}
-
 @media (max-width: 686px) {
   .compania {
     height: 500px;
@@ -491,9 +516,8 @@ del,
 }
 
 @media (max-width: 600px) {
-  .section_two_books_block {
-    width: 600px;
-    height: 600px;
+  .muammo p {
+    font-size: 23px;
   }
 }
 
@@ -533,23 +557,18 @@ del,
 
 @media (max-width: 500px) {
   .section_two_books {
-    width: 400px;
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   .tedbook_eng,
   .tedbook_rus {
-    width: 200px;
-  }
-
-  .section_two_books_block {
-    width: 500px;
+    width: 300px;
   }
 }
 
 @media (max-width: 486px) {
   .compania {
-    width: 580px !important;
+    width: 500px !important;
     height: 580px;
   }
 
@@ -580,16 +599,20 @@ del,
 }
 
 @media (max-width: 400px) {
-  .section_two_books_block {
-    width: 410px;
-    background-size: cover;
+  .muammo p {
+    font-size: 18px;
+  }
+
+  .tedbook_eng,
+  .tedbook_rus {
+    width: 250px;
   }
 }
 
 @media (max-width: 386px) {
   .compania {
     height: 580px;
-    width: 480px !important;
+    width: 470px !important;
   }
 
   .comp_1 {
@@ -615,6 +638,13 @@ del,
   }
 }
 
+@media (max-width: 350px) {
+  .compania {
+    height: 580px;
+    width: 400px !important;
+  }
+}
+
 @media (max-width: 320px) {
   .section-title h2 {
     font-size: 13px;
@@ -628,6 +658,13 @@ del,
     font-size: 13px;
     width: 131px;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 286px) {
+  .compania {
+    height: 580px;
+    width: 360px !important;
   }
 }
 
