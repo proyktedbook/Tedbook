@@ -1,6 +1,366 @@
+@import "_miksin.scss";
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+.container-fluid{
+    height: 8000px;
+    overflow: hidden;
+}
+// .header{
+//     width: 100% ;
+//     height: 700px;
+//     .book_header{
+//         width: inherit;
+//         height: 700px;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//     .header_1, .header_2{
+//         width: 800px;
+//         height: 650px;
+//         border: 1px solid red;
+//     }
+    // margin-left: -40px;
+    
+    // @media (max-width:1200px){
+    //     height: 600px;
+    // }
+    // @media (max-width:1000px){
+    //     width: 100%;
+    //     height: 400px;
+    // }
+    // @media (max-width:600px){
+    //     width: 610px !important;
+    //     height: 300px;
+    //     padding: 0 auto;
+    // }
+    // @media (max-width:400px){
+    //     width: 400px;
+    //     height: 300px;
+    // }
+    // @media (max-width:300px){
+    //     height: 300px;
+    //     width: 300px;
+    // }
+    // @media (max-width:200px){
+    //     height: 200px;
+    // }
+// }
+.compania{
+    height: 900px;
+    background-image: url('../img/comp-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -40px;
+    margin-left: -100px;
+    overflow: hidden;
+    position: absolute;
+    @include center;
+    // @media (max-width:836px){
+    //     width: 836px !important;
+    // }
+    @media (max-width:986px){
+        height: 900px;
+    }
+    @media (max-width:886px){
+        height: 800px;
+    }
+    @media (max-width:786px){
+        height: 700px;
+    }
+    @media (max-width:686px){
+        height: 500px;
+    }
+    @media (max-width:486px){
+        width: 580px !important;
+        height: 580px;
+    }
+    @media (max-width:386px){
+        height: 580px;
+        width: 480px !important;
+    }
+
+}
+li{
+    list-style: none;
+}
+.comp_1{
+    position: relative;
+    // top: 580%;
+    left: 25%;
+    width: 800px;
+    height: 800px;
+    background-image: url('../img/sariq-ramka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @media (max-width:1486px){
+        left: 20%;
+    }
+    @media (max-width:1206px){
+        width: 700px !important;
+        left: 20%;
+    }
+    @media (max-width:1086px){
+        width: 700px !important;
+        left: 15%;
+    }
+    @media (max-width:986px){
+        width: 650px !important;
+        top: 32%;
+        left: 10%;
+    }
+    @media (max-width:786px){
+        width: 600px !important;
+        top: 30%;
+        left: 10%;
+    }
+    @media (max-width:686px){
+        width: 450px !important;
+        height: 600px;
+        top: 25%;
+        left: 10%;
+    }
+    @media (max-width:586px){
+        width: 400px !important;
+        height: 400px; 
+        left: 15%;
+        top: 20%;
+    }
+    @media (max-width:486px){
+        width: 420px !important;
+        height: 800px;
+        top: 30%;
+        left: 10%;
+    }
+    @media (max-width:386px){
+        width:380px !important;
+        height:580px;
+        top: 45%;
+        left: 10%;
+        background-size: 100%;
+    }
+    .fas::before{
+        content: "\f00c";
+        color: white;
+    }
+    p:nth-child(4){
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 900;
+        @media (max-width:586px){
+            font-size: 18px;
+            
+        }
+    }
+    p:first-child{
+        margin-top: 10%;
+        font-size: 35px;
+        text-transform: uppercase;
+        @media (max-width:586px){
+            font-size: 28px;
+            
+        }
+    }
+    p,ul{
+        margin-left: 10%;
+        width: 550px;
+        color: #212529;
+        font-family: "Roboto",Sans-serif;
+        box-sizing: border-box;
+        font-size: 20px;
+        .margin{
+            margin-top: 20px;
+            @media (max-width:786px){
+                margin: 0;
+                
+            }
+        }
+        @media (max-width:786px){
+            width: 500px;
+        }
+        @media (max-width:686px){
+            width: 400px;
+            font-size: 14px;
+            margin-top: -5px;
+        }
+        @media (max-width:586px){
+            width: 300px;
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+    ul{
+        margin-left: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .book{
+//     height: 600px;
+//     @include center;
+//     img{
+//         width: 500px;
+//         height: 500px;
+//         margin-left: -100px;
+//         position: absolute;
+//         @media (max-width:1280px){
+//             margin-left: 100px;
+//             margin-top: -100px;
+//         }
+//         @media (max-width:1100px){
+//             width: 450px;
+//             height: 450px;
+//         }
+//         @media (max-width:950px){
+//             width: 300px;
+//             height: 300px;
+//             margin-left: -10px;
+//             margin-top: -200px;
+//         }
+//     }
+// }  
+
+// .loremm{
+//     @media (max-width:896px){
+//         width: 896px !important;
+//     }
+// }
+// .logo_header{
+//     position: absolute;
+//     right: 4%;
+//     top: 1%;
+//     img{
+//         width: 200px;
+//         height: 50px;
+//     }
+//     @media (max-width:1280px){
+//         right: -1%;
+//     }
+//     @media (max-width:1100px){
+//         right: 2%;
+//         width: 180px;
+//     }
+//     @media (max-width:950px){
+//         width: 140px;
+//         right: 6%;
+//     }
+//     @media (max-width:896px){
+        
+//     }
+// }
+// .header_icon img{
+//     width: 120px;
+//     height: 120px;
+//     margin-left: -80px;
+//     margin-top: 140px;
+//     z-index: 1;
+//     @media  (max-width:1280px){
+//         margin-left: -30px;
+//     }
+//     @media  (max-width:1100px){
+//         width: 80px;
+//         height: 80px;
+//         margin-left: 0px;
+//         margin-top: 100px;
+//     }
+//     @media  (max-width:896px){
+//         margin-top: 60px;
+//     }
+// }
+// .header_lorem{
+//     width: 700px;
+//     color: #FFF;
+//     font-family: "Roboto",Sans-serif;
+//     font-size: 40px ;
+//     font-weight: 0;
+//     text-transform: uppercase;
+//     padding-left: 50px;
+//     padding-top: 100px;
+//     strong{
+//         font-weight: 800;
+//     }
+//     @media  (max-width:1100px){
+//         width: 600px;
+//         font-size: 35px;
+//     }
+//     @media (max-width:950px){
+//         width: 500px;
+//         font-size: 30px;
+//     }
+// }
+// .header_lor{
+//     width: 700px;
+//     color: #FFF;
+//     font-family: "Roboto",Sans-serif;
+//     font-size: 30px ;
+//     font-weight: 300;
+//     text-transform: uppercase;
+//     padding-left: 50px;
+//     padding-top: 80px;
+//     @media (max-width:1270px){
+//         width: 600px;
+//     }
+//     @media (max-width:1100px){
+//         width: 500px;
+//         font-size: 25px;
+//         margin-top: -30px;
+//     }
+//     @media (max-width:950px){
+//         width: 480px;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section-title h1 {
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +369,7 @@ body{
     color: #212529;
     @media  (max-width:767px) {
         font-size: calc(24px + (46+46 *0.7) *((100vw - 320px)/1280));
+
     }
 }
 .section-title h2{
@@ -112,16 +473,30 @@ body{
         font-size: calc(20px + (16+16 *0.7) *((100vw - 320px)/1280));
     }
 }
+.section_one_block {
+    text-align: center;
+}
 .section_one_bottom{
     margin-top: 50px;
     margin-bottom: 150px;
 }
 
+     @media (max-width: 767px){
 
+    //      width: 60px;
+    //      height: 14px;
+    //      background-color: green;
+    //      color: red;
+    //      font-weight: bold;
+    //      font-size: large;
+    //      background-color: blue;
+    //  }
+ }
 .section_two_block h1{
     color: #212529;
     font-size: 70px;
     font-weight: 900;
+    text-align: center;
     @media  (max-width:767px) {
         font-size: calc(24px + (46+46 *0.7) *((100vw - 320px)/1280));
     }
@@ -169,17 +544,81 @@ body{
     position: relative;
     left: 140px;
 }
-// .section_two_books{
-//     // margin-left: 100px;
-// }
-.section_two_books_block{
-    background: url(../img/orbita-1.png) no-repeat center center ;
-    background-size: cover;
-    background-position: center;
-    // width: 1900px;
-    // position: relative;
-    // top: 300px;
+.section_two_books{
+    width: 1000px;
+    height: 500px;
+    @media (max-width:1000px){
+        width: 500px;
+    }
+    @media (max-width:500px){
+        width: 400px;
+        margin-top: 80px;
+    }
 }
+.tedbook_eng ,.tedbook_rus{
+    @media (max-width:1000px){
+        width: 250px;
+    }
+    @media (max-width:500px){
+        width: 200px;
+    }
+
+}
+.section_two_books_block{
+    // width: 1300px;
+    background: url(../img/orbita-1.png) no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position:left;
+    margin-top: 20px;
+    @include center;
+
+    @media (max-width:1300px){
+        width: 1300px;
+    }
+    @media (max-width:1200px){
+        width: 1200px;
+    }
+    @media (max-width:1100px){
+        width: 1100px;
+    }
+    @media (max-width:1000px){
+        width: 1000px;
+        height: 1000px;
+        background-size: cover;
+        background-position: -600px;
+            
+    }
+    @media (max-width:900px){
+        background-size: cover;
+        width: 900px;
+        height: 1000px;
+    }
+    @media (max-width:800px){
+        width: 800px;
+        height: 900px;
+        background-position: -400px;
+    }
+    @media (max-width:700px){
+        width: 700px;
+        height: 700px;
+        background-position: -300px;
+    }
+    @media (max-width:600px){
+        width: 600px;
+        height: 600px;
+    }
+    @media (max-width:500px){
+        width: 500px;
+    }
+    @media (max-width:400px){
+        width: 410px;
+        background-size: cover;
+    }
+}
+
 
 
 
@@ -204,6 +643,7 @@ del ,.section_three_narx{
     font-size: 62px;
     font-weight: 900;
     line-height: 1.5em;
+    text-align: center;
     @media  (max-width:767px) {
         font-size: calc(20px + (42+42 *0.7) *((100vw - 320px)/1280));
     }
