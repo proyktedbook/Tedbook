@@ -8,8 +8,40 @@ body {
   padding: 0 0 0 0 !important;
 }
 
+.padarka {
+  width: 100%;
+  height: auto;
+}
+
+.padarka img {
+  width: 120px;
+  height: 120px;
+}
+
+.padarka p {
+  line-height: 1;
+}
+
+.padarka .padarka_lorem {
+  height: auto;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: .4em;
+}
+
+.padarka .padarka_lorem .padarka_last {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1em;
+}
+
 .compania {
   height: 900px;
+  width: 110% !important;
   background-image: url("../img/comp-bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -670,6 +702,18 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 1040px) {
+  .padarka .padarka_lorem {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 32px;
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 1024px) {
   .form_rus_label::before {
     left: 210px;
@@ -754,6 +798,13 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 840px) {
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 26px;
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 800px) {
   .muammo p {
     font-size: 33px;
@@ -802,6 +853,7 @@ input[type="checkbox"]:checked + label::before {
 
 @media (max-width: 786px) {
   .compania {
+    width: 120% !important;
     height: 700px;
   }
 
@@ -1026,6 +1078,37 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 720px) {
+  .padarka img {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+
+  .padarka .padarka_lorem {
+    width: 400px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem {
+    width: 300px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
   .muammo .muammo_block p {
     font-size: 14px;
   }
@@ -1074,6 +1157,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 600px) {
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
   .muammo p {
     font-size: 23px;
   }
@@ -1235,9 +1323,22 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 490px) {
+  .padarka .padarka_lorem {
+    width: 250px;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 486px) {
   .compania {
-    width: 500px !important;
+    width: 130% !important;
     height: 580px;
   }
 
@@ -1409,7 +1510,6 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 386px) {
   .compania {
     height: 580px;
-    width: 470px !important;
   }
 
   .comp_1 {
@@ -1503,7 +1603,6 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 350px) {
   .compania {
     height: 580px;
-    width: 400px !important;
   }
 }
 
@@ -1578,7 +1677,6 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 286px) {
   .compania {
     height: 580px;
-    width: 360px !important;
   }
 }
 
