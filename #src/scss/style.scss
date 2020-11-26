@@ -1,13 +1,230 @@
 @import "_miksin.scss";
 
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
-.container-fluid{
-    height: auto;
-    overflow: hidden;
-    padding: 0 0 0 0 !important;
+
+
+.header_bg{
+    background: url(../img/header_bg.jpg) no-repeat center / cover;
+    height: 100vh;
+
+    @media  (max-width:1024px) {
+        height:50vh;
+        padding-bottom: 250px;
+    }
+    @media  (max-width:800px) {
+        height:60vh;
+    }
+    @media  (max-width:600px) {
+        height:50vh;
+        // padding-bottom: 400px;
+    }
+    @media only screen and  (max-width:640px) {
+        height:100vh;
+        padding-bottom: 700px;
+    }
+    @media  (max-width:768px) {
+        height:70vh;
+    }
+    @media  (max-width:320px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:321px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:322px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:323px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:324px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:325px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    @media  (max-width:326px) {
+        height:100vh;
+        padding-bottom: 550px;
+    }
+    
+    @media  (max-width:384px) {
+        height:80vh;
+        padding-bottom: 0px;
+    }
+    @media  (max-width:360px) {
+        height:90vh;
+        padding-bottom: 0px;
+    }
+   @media  (max-width:280px) {
+        height:100vh;
+        padding-bottom: 0px;
+    } 
+    @media  (max-width:240px) {
+        height:100vh;
+        padding-bottom: 450px;
+    }
 }
+.section_header h2{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-top: 150px;
+    @media  (max-width:767px) {
+        font-size: calc(20px + (25+25 *0.7) *((100vw - 320px)/1280));
+    }
+    @media  only screen and  (max-width:800px) {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    @media  only screen and  (max-width:750px) {
+        position: relative;
+        margin-top: 100px;
+        right: 90px;
+        // font-size: 25px;
+    }
+    @media  only screen and  (max-width:640px) {
+        font-size: 25px;
+    }
+    @media  (max-width:414px) {
+        margin-top:150px;
+    }
+    @media  (max-width:412px) {
+        margin-top:100px;
+    }
+    @media  (max-width:375px) {
+        margin-top:75px;
+    }
+    @media  (max-width:320px) {
+        margin-top:75px;
+    }
+    @media  (max-width:280px) {
+        margin-top:95px;
+
+    }
+}
+.header_span{
+    font-weight: 900;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #FFF;
+    @media  (max-width:767px) {
+        font-size: calc(25px + (20+20 *0.7) *((100vw - 320px)/1280));
+
+    }
+}
+
+.buyurtma_tugma_button{
+   position: relative;
+   bottom: 100px;
+
+// .container-fluid{
+//     height: auto;
+//     overflow: hidden;
+//     padding: 0 0 0 0 !important;
+
+// }
+}
+
+.section_header p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 14px;
+    color: #FFF;
+    @media  (max-width:767px) {
+        font-size: calc(15px + (10+10 *0.7) *((100vw - 320px)/1280));
+    }
+    @media  only screen and  (max-width:750px) {
+        position: relative;
+        right: 90px;
+        // font-size: 25px;
+    }
+    @media  (max-width:414px) {
+        margin-bottom: 20px;
+    }
+}
+
+.section_header img{
+    margin-top: 80px;
+    width: 550px;
+    @media  (max-width:1024px) {
+        margin-top: 150px;
+        width: 400px;
+    }
+    @media  (max-width:800px) {
+        width: 200px;
+        margin-top: 150px;
+    }
+    @media  only screen and  (max-width:750px) {
+        margin-top: 0px;
+        position: relative;
+        bottom: 0px;
+        // font-size: 25px;
+    }
+    @media only screen and  (max-width:640px) {
+        // width: 320px;
+        margin-top: -20px;
+    }
+    @media  (max-width:600px) {
+        // width: 320px;
+        margin-top: -30px;
+    }
+    @media  (max-width:540px) {
+        // width: 320px;
+        margin-top: 30px;
+    }
+    @media  (max-width:480px) {
+        // width: 320px;
+        margin-top: 30px;
+    }
+    @media  (max-width:414px) {
+        // width: 320px;
+        margin-top: 30px;
+    }
+    @media  (max-width:412px) {
+        // width: 320px;
+        margin-top: 30px;
+    }
+    @media  (max-width:375px) {
+        // width: 320px;
+        margin-top: 0px;
+    }
+    @media  (max-width:360px) {
+        // width: 320px;
+        margin-top: -30px;
+    }
+    @media  (max-width:768px) {
+        width: 320px;
+        margin-top: 200px;
+    }
+    @media  (max-width:767px) {
+        width: calc(150px + (550+550 *0.7) *((100vw - 320px)/1280));
+    }
+}
+
+// .container-fluid{
+//     height: 8000px;
+//     overflow: hidden;
+// }
 // .header{
 //     width: 100% ;
 //     height: 700px;
@@ -134,11 +351,16 @@ body{
     background-image: url('../img/comp-bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -40px;
-    margin-left: -100px;
+    background-position: center;
+    // margin-left: 0px;
     overflow: hidden;
+
+    // position: absolute;
+    // @include center;
+
     position: relative;
     @include center;
+
     // @media (max-width:836px){
     //     width: 836px !important;
     // }
@@ -1007,22 +1229,132 @@ li{
         margin-top: 100px;
     }
 }
-.tedbook_eng ,.tedbook_rus{
+.tedbook_eng {
     @media (max-width:1000px){
         width: 350px;
     }
+    // @media (max-width:320px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top: 140px;
+    //     left: 100px;
+    // }
+    // @media (max-width:768px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top: 136px;
+    //     left: 150px;
+    // }
+    // @media (max-width:540px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top: 140px;
+    //     left: 30px;
+    // }
     @media (max-width:500px){
         width: 300px;
     }
     @media (max-width:400px){
         width: 250px;
     }
-
+    // @media (max-width:280px){
+    //     width: 150px;
+    //     position: relative;
+    //     top: 170px;
+    //     left: 30px;
+    // }
+}
+.tedbook_rus{
+    @media (max-width:1000px){
+        width: 250px;
+    }
+    // @media (max-width:320px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top:-47px;
+    //     left: 10px;
+    // }
+    // @media (max-width:768px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top:-100px;
+    //     left: 300px;
+    // }
+    // @media (max-width:540px){
+    //     // width: 150px;
+    //     position: relative;
+    //     top:-100px;
+    //     left: 200px;
+    // }
+    @media (max-width:500px){
+        width: 200px;
+    }
+    // @media (max-width:280px){
+    //     width: 150px;
+    //     position: relative;
+    //     top: 170px;
+    //     left: -30px;
+    // }
 }
 .section_two_books_block{
     // width: 1300px;
     background: url(../img/orbita-1.png) no-repeat;
     background-position: center;
+
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    // background-position:-280px 50px;
+    margin-top: 20px;
+    @include center;
+
+    @media (max-width:1300px){
+        width: 1300px;
+    }
+    @media (max-width:1200px){
+        width: 1200px;
+    }
+    @media (max-width:1100px){
+        width: 1100px;
+    }
+    @media (max-width:1000px){
+        width: 1000px;
+        height: 1000px;
+        background-size: cover;
+        background-position: -600px;
+            
+    }
+    @media (max-width:900px){
+        background-size: cover;
+        width: 900px;
+        height: 1000px;
+    }
+    @media (max-width:800px){
+        width: 800px;
+        height: 900px;
+        background-position: -400px;
+    }
+    @media (max-width:700px){
+        width: 700px;
+        height: 700px;
+        background-position: -300px;
+    }
+    @media (max-width:600px){
+        width: 600px;
+        height: 600px;
+    }
+    @media (max-width:500px){
+        width: 500px;
+    }
+    @media (max-width:400px){
+        width: 410px;
+        background-size: cover;
+    }
+    @media (max-width:280px){
+        width: 410px;
+        background-size: cover;
+    }
+
     height: 800px;
     width: 120%;
     background-size: cover;
@@ -1141,7 +1473,7 @@ input[type="checkbox"]:checked + label::before {
   
 .form_rus_label ,.checkbox_ing_label{
     color: #212529;
-    cursor: default;
+    cursor: pointer;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 500;
@@ -1487,6 +1819,124 @@ input[type="checkbox"]:checked + label::before {
         width: 200px;
     }
 }
+.buyurtma_tugma_3{
+    border: none;
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 1.6em;
+    color: #fff;
+    background-color: #3ECC14;
+    border-radius: 50px;
+    width: 350px;
+    height: 70px;
+    // margin-bottom: 150px;
+    position: relative;
+    @media  (max-width:767px) {
+        width: calc(200px + (250+250 *0.7) *((100vw - 320px)/1280));
+        font-size: calc(20px + (17+17 *0.7) *((100vw - 320px)/1280));
+    }
+    @media  (max-width:1024px) {
+        position: relative;
+        top: 70px;
+    }
+    @media  (max-width:800px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:768px) {
+        position: relative;
+        top: 120px;
+    }
+    @media only screen and   (max-width:600px) {
+        position: relative;
+        top: 150px;
+    }
+    // @media  (max-width:640px) {
+    //     position: relative;
+    //     top: 920px;
+    // }
+    @media  (max-width:540px) {
+        position: relative;
+        top: 125px;
+    }
+    @media  (max-width:480px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:412px) {
+        position: relative;
+        top: 170px;
+    }
+    @media  (max-width:384px) {
+        position: relative;
+        top: 120px;
+    }
+    @media  (max-width:360px) {
+        position: relative;
+        top: 100px;
+    }
+    @media  (max-width:320px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:321px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:322px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:323px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:324px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:325px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:326px) {
+        position: relative;
+        top: 150px;
+    }
+    @media  (max-width:300px) {
+        position: relative;
+        top: 70px;
+        position: relative;
+        top: 150px;
+ 
+    }
+    @media  (max-width:360px) {
+        position: relative;
+        top: 70px;
+        position: relative;
+        top: 150px;
+ 
+    }
+    @media  (max-width:280px) {
+        position: relative;
+        top: 170px;
+    }
+    @media  (max-width:240px) {
+        position: relative;
+        top: 110px;
+        width: 150px;
+        height: 25px;
+        font-size: 15px;
+    }
+    @media  (max-width:241px) {
+        position: relative;
+        top: 110px;
+        width: 150px;
+        height: 25px;
+        font-size: 15px;
+    }
+}
 
 .section_form_labels_block{
     margin-top: 150px;
@@ -1499,6 +1949,10 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .buyurtma_tugma_2:hover{
+    color: #000;
+    transition: all 0.5s;
+}
+.buyurtma_tugma_3:hover{
     color: #000;
     transition: all 0.5s;
 }
@@ -1855,15 +2309,38 @@ input[type="checkbox"]:checked + label::before {
         font-size: calc(20px + (33+33 *0.7) *((100vw - 320px)/1280));
     }
     @media  (max-width:320px) {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
+
 .section_block_3 span{
     color: #212529;
     font-family: "Roboto",Sans-serif;
     font-size: 20px;
     font-weight: 500;
     @media  (max-width:767px) {
-        font-size: calc(12px + (10+10 *0.7) *((100vw - 320px)/1280));
+        font-size: calc(13px + (7+7 *0.7) *((100vw - 320px)/1280));
     }
+    @media  (max-width:320px) {
+        font-size: 10px;
+    }
+}
+.section_block_3 img{
+    width: 183px;
+    @media  (max-width:767px) {
+        font-size: calc(100px + (83+83 *0.7) *((100vw - 320px)/1280));
+    }
+    @media(width: 240px){
+        width: 100px;
+    }
+}
+
+
+
+
+.section_video h2{
+    color: #212529;
+    font-family: "Roboto",Sans-serif;
+    font-size: 53px;
+    font-weight: 900;
 }
