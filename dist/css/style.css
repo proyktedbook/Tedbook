@@ -51,13 +51,59 @@ body {
   width: 550px;
 }
 
+.padarka {
+  width: 100%;
+  height: auto;
+}
+
+.padarka img {
+  width: 120px;
+  height: 120px;
+}
+
+.padarka p {
+  line-height: 1;
+}
+
+.padarka .padarka_lorem {
+  height: auto;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: .4em;
+}
+
+.padarka .padarka_lorem .padarka_last {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1em;
+}
+
 .compania {
   height: 900px;
+  width: 110% !important;
   background-image: url("../img/comp-bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 li {
@@ -110,6 +156,232 @@ li {
 
 .comp_1 ul {
   margin-left: 5%;
+}
+
+.muammo {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.muammo .text-center {
+  height: 200px;
+}
+
+.muammo p {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+.muammo .muammo_block {
+  width: 90%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.muammo .muammo_block p {
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 400px;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.muammo .muammo_block p span:last-child {
+  margin-left: 10px;
+}
+
+.muammo .muammo_block p img {
+  margin-left: -5px;
+}
+
+.kimlar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  background-image: url("https://tedbook.uz/wp-content/uploads/khdv-1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 0 0 0 !important;
+  z-index: -2;
+}
+
+.kimlar::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.61);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.kimlar p {
+  color: #FFF;
+  font-family: "Roboto",Sans-serif;
+  font-size: 53px;
+  font-weight: 900;
+  text-align: center;
+  z-index: 99999;
+}
+
+.kimlar .kimlar_block {
+  width: 90%;
+  height: 250px;
+  color: #FFF;
+  font-family: "Roboto",Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.savollar {
+  height: auto;
+  background-color: rgba(247, 243, 243, 0.945);
+}
+
+.savollar p {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 53px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.savollar .chap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  left: 5%;
+  height: 220px;
+  background-image: url("https://tedbook.uz/wp-content/uploads/vopros.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.savollar .chap p {
+  margin-left: 40px;
+  width: 70%;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.savollar .row {
+  height: 180px;
+}
+
+.savollar .h-auto {
+  height: 220px !important;
+  background-size: cover !important;
+}
+
+.savollar .ong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  position: relative;
+  right: -38%;
+  height: 180px;
+  background-image: url("https://tedbook.uz/wp-content/uploads/otvet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.savollar .ong p {
+  margin-left: 40px;
+  width: 70%;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: end;
 }
 
 .section-title h1 {
@@ -210,6 +482,8 @@ li {
 .section_two_books {
   width: 1000px;
   height: 500px;
+  margin-left: -150px;
+  margin-top: -40px;
 }
 
 .section_two_books_block {
@@ -232,6 +506,18 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 800px;
+  width: 120%;
+  background-size: cover;
+  margin-top: 20px;
+  margin-left: -20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .section_tree_audio {
@@ -428,7 +714,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3ECC14;
   border-radius: 30px;
   width: 400px;
-  height: 70px;
+  height: 60px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -583,6 +869,19 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 1292px) {
+  .savollar .chap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+
+  .savollar .ong {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1206px) {
   .comp_1 {
     width: 700px !important;
@@ -596,6 +895,18 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 1198px) {
+  .savollar .chap p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .savollar .ong p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+}
+
 @media (max-width: 1100px) {
   .section_two_books_block {
     width: 1100px;
@@ -606,6 +917,30 @@ input[type="checkbox"]:checked + label::before {
   .comp_1 {
     width: 700px !important;
     left: 15%;
+  }
+}
+
+@media (max-width: 1072px) {
+  .savollar .chap p {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+
+  .savollar .ong p {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .padarka .padarka_lorem {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 32px;
+    margin-left: 5px;
   }
 }
 
@@ -650,13 +985,36 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 1000px) {
-  .section_two_books {
-    width: 500px;
+@media (max-width: 1020px) {
+  .muammo {
+    height: 1200px;
   }
 
+  .muammo .muammo_block p {
+    width: 100%;
+  }
+
+  .muammo .muammo_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
   .tedbook_eng {
-    width: 250px;
+    width: 350px;
   }
 
   .tedbook_rus {
@@ -671,6 +1029,26 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 991px) {
+  .savollar .chap p {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong p {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong {
+    right: -5%;
+  }
+
+  .buyurtma_tugma {
+    width: 600px;
+  }
+}
+
 @media (max-width: 986px) {
   .compania {
     height: 900px;
@@ -680,6 +1058,12 @@ input[type="checkbox"]:checked + label::before {
     width: 650px !important;
     top: 32%;
     left: 10%;
+  }
+}
+
+@media (max-width: 970px) {
+  .kimlar p {
+    font-size: 43px;
   }
 }
 
@@ -697,14 +1081,25 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 840px) {
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 26px;
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 800px) {
   .header_bg {
     height: 60vh;
   }
 
   .section_header img {
-    width: 320px;
-    margin-top: 250px;
+    width: 200px;
+    margin-top: 150px;
+  }
+
+  .muammo p {
+    font-size: 33px;
   }
 
   .section_two_books_block {
@@ -759,8 +1154,16 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .section_header h2 {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 786px) {
   .compania {
+    width: 120% !important;
     height: 700px;
   }
 
@@ -789,6 +1192,40 @@ input[type="checkbox"]:checked + label::before {
   .section_header img {
     width: 320px;
     margin-top: 200px;
+  }
+
+  .kimlar {
+    height: 2000px;
+  }
+
+  .kimlar .kimlar_block {
+    height: 700px;
+  }
+
+  .savollar .chap p {
+    width: 85%;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .savollar .text-center {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+
+  .savollar .buyurtma_tugma_2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .savollar .ong {
+    right: -5%;
   }
 
   .form_rus_label::before {
@@ -1015,6 +1452,62 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .section_header h2 {
+    position: relative;
+    margin-top: 100px;
+    right: 90px;
+  }
+
+  .section_header p {
+    position: relative;
+    right: 90px;
+  }
+
+  .section_header img {
+    margin-top: 0px;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 720px) {
+  .padarka img {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+
+  .padarka .padarka_lorem {
+    width: 400px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem {
+    width: 300px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .muammo .muammo_block p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 700px) {
   .section_two_books_block {
     width: 700px;
@@ -1040,6 +1533,33 @@ input[type="checkbox"]:checked + label::before {
     width: 400px;
     font-size: 14px;
     margin-top: -5px;
+  }
+}
+
+@media (max-width: 678px) {
+  .savollar .chap p {
+    width: 85%;
+    font-size: 14px;
+    margin-top: -70px;
+  }
+
+  .savollar .h-auto {
+    height: 180px !important;
+    padding-top: 50px;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 14px;
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 675px) {
+  .savollar .row {
+    height: 160px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -1087,6 +1607,15 @@ input[type="checkbox"]:checked + label::before {
 
   .section_header img {
     margin-top: -30px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .muammo p {
+    font-size: 23px;
   }
 
   .section_two_books_block {
@@ -1159,6 +1688,52 @@ input[type="checkbox"]:checked + label::before {
     width: 300px;
     font-size: 12px;
     margin-top: -5px;
+  }
+}
+
+@media (max-width: 578px) {
+  .savollar .h-auto {
+    height: 140px !important;
+    padding-top: 10px;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .savollar .chap {
+    width: 90% !important;
+    height: 120px;
+  }
+
+  .savollar .chap p {
+    width: 80%;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .savollar .ong {
+    width: 90% !important;
+    height: 120px;
+  }
+}
+
+@media (max-width: 570px) {
+  .kimlar p {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 568px) {
+  .kimlar {
+    height: 2400px;
   }
 }
 
@@ -1238,14 +1813,33 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 538px) {
+  .savollar .chap p {
+    width: 85%;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .muammo .muammo_block p {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 500px) {
   .section_two_books {
-    width: 400px;
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   .tedbook_eng {
-    width: 200px;
+    width: 300px;
   }
 
   .tedbook_rus {
@@ -1257,9 +1851,22 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 490px) {
+  .padarka .padarka_lorem {
+    width: 250px;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+
+  .padarka .padarka_lorem .padarka_last {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 486px) {
   .compania {
-    width: 580px !important;
+    width: 130% !important;
     height: 580px;
   }
 
@@ -1315,6 +1922,51 @@ input[type="checkbox"]:checked + label::before {
 
   .block_7 {
     margin-right: 110px;
+  }
+}
+
+@media (max-width: 478px) {
+  .savollar p {
+    font-size: 33px;
+  }
+
+  .savollar .chap p {
+    width: 75%;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+
+  .savollar .ong p {
+    width: 75%;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 475px) {
+  .savollar .chap {
+    height: 100px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .savollar .row {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .buyurtma_tugma_2 {
+    margin: 50px;
+    padding: 0;
+  }
+
+  .savollar .ong {
+    height: 80px;
+    margin-top: 30px;
+    padding: 0;
   }
 }
 
@@ -1451,7 +2103,31 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 410px) {
+  .savollar .chap p {
+    width: 80%;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 400px) {
+  .muammo p {
+    font-size: 18px;
+  }
+
+  .tedbook_eng {
+    width: 250px;
+  }
+
   .section_two_books_block {
     width: 410px;
     background-size: cover;
@@ -1461,7 +2137,6 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 386px) {
   .compania {
     height: 580px;
-    width: 480px !important;
   }
 
   .comp_1 {
@@ -1486,6 +2161,20 @@ input[type="checkbox"]:checked + label::before {
   .buyurtma_tugma_3 {
     position: relative;
     top: 120px;
+  }
+}
+
+@media (max-width: 380px) {
+  .savollar .chap p {
+    width: 80%;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -1588,6 +2277,12 @@ input[type="checkbox"]:checked + label::before {
 
   .section_bg {
     height: 40vh;
+  }
+}
+
+@media (max-width: 350px) {
+  .compania {
+    height: 580px;
   }
 }
 
@@ -1758,6 +2453,12 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 286px) {
+  .compania {
+    height: 580px;
+  }
+}
+
 @media (max-width: 280px) {
   .header_bg {
     height: 100vh;
@@ -1815,6 +2516,26 @@ input[type="checkbox"]:checked + label::before {
 
   .section_8_circle5 p {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 275px) {
+  .savollar .chap {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .row {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .ong {
+    height: 40px;
+    margin: 0;
+    padding: 0;
   }
 }
 

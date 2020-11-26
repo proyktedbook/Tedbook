@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 .header_bg{
     background: url(../img/header_bg.jpg) no-repeat center / cover;
     height: 100vh;
@@ -90,6 +91,16 @@ body{
     @media  (max-width:767px) {
         font-size: calc(20px + (25+25 *0.7) *((100vw - 320px)/1280));
     }
+    @media  only screen and  (max-width:800px) {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    @media  only screen and  (max-width:750px) {
+        position: relative;
+        margin-top: 100px;
+        right: 90px;
+        // font-size: 25px;
+    }
     @media  only screen and  (max-width:640px) {
         font-size: 25px;
     }
@@ -125,6 +136,13 @@ body{
 .buyurtma_tugma_button{
    position: relative;
    bottom: 100px;
+
+// .container-fluid{
+//     height: auto;
+//     overflow: hidden;
+//     padding: 0 0 0 0 !important;
+
+// }
 }
 
 .section_header p{
@@ -134,6 +152,11 @@ body{
     color: #FFF;
     @media  (max-width:767px) {
         font-size: calc(15px + (10+10 *0.7) *((100vw - 320px)/1280));
+    }
+    @media  only screen and  (max-width:750px) {
+        position: relative;
+        right: 90px;
+        // font-size: 25px;
     }
     @media  (max-width:414px) {
         margin-bottom: 20px;
@@ -148,8 +171,14 @@ body{
         width: 400px;
     }
     @media  (max-width:800px) {
-        width: 320px;
-        margin-top: 250px;
+        width: 200px;
+        margin-top: 150px;
+    }
+    @media  only screen and  (max-width:750px) {
+        margin-top: 0px;
+        position: relative;
+        bottom: 0px;
+        // font-size: 25px;
     }
     @media only screen and  (max-width:640px) {
         // width: 320px;
@@ -238,16 +267,100 @@ body{
     //     height: 200px;
     // }
 // }
+.padarka{
+    width: 100%;
+    height: auto;
+    img{
+        width: 120px;
+        height: 120px;
+        @media (max-width:720px){
+            width: 80px;
+            height: 80px;
+            font-size: 16px;
+            margin-left: 40px;
+        }
+        @media (max-width:720px){
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+    }
+    p{
+        line-height: 1;
+    }
+    .padarka_lorem{
+        height: auto;
+        color: #212529;
+        font-family: "Roboto",Sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: .4em;
+        @media (max-width:1040px){
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        @media (max-width:720px){
+            width: 400px;
+            font-size: 16px;
+            margin-left: 40px;
+        }
+        @media (max-width:720px){
+            width: 300px;
+            font-size: 16px;
+            margin-left: 40px;
+        }
+        @media (max-width:490px){
+            width: 250px;
+            font-size: 14px;
+            margin-left: 40px;
+        }
+        .padarka_last{
+            color: #212529;
+            font-family: "Roboto",Sans-serif;
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 1em;
+            @media (max-width:1040px){
+                font-size: 32px;
+                margin-left: 5px;
+            }
+            @media (max-width:840px){
+                font-size: 26px;
+                margin-left: 5px;
+            }
+            @media (max-width:720px){
+                font-size: 20px;
+                margin-left: 5px;
+            }
+            @media (max-width:600px){
+                font-size: 16px;
+                margin-left: 5px;
+            }
+            @media (max-width:490px){
+                width: 250px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 .compania{
     height: 900px;
+    width: 110% !important;
     background-image: url('../img/comp-bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     // margin-left: 0px;
     overflow: hidden;
+
     // position: absolute;
     // @include center;
+
+    position: relative;
+    @include center;
+
     // @media (max-width:836px){
     //     width: 836px !important;
     // }
@@ -258,18 +371,24 @@ body{
         height: 800px;
     }
     @media (max-width:786px){
+        width: 120% !important;
         height: 700px;
     }
     @media (max-width:686px){
         height: 500px;
     }
     @media (max-width:486px){
-        width: 580px !important;
+        width: 130% !important;
         height: 580px;
     }
     @media (max-width:386px){
         height: 580px;
-        width: 480px !important;
+    }
+    @media (max-width:350px){
+        height: 580px;
+    }
+    @media (max-width:286px){
+        height: 580px;
     }
 
 }
@@ -387,12 +506,380 @@ li{
     }
 
 }
+.muammo{
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    @include column;
+    @media (max-width:1020px){
+        height: 1200px;
+    }  
+    .text-center{
+        height: 200px;
+    }
+    p{
+        color: #212529;
+        font-family: "Roboto",Sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.5em;
+        @media (max-width:800px){
+            font-size: 33px;
+        }
+        @media (max-width:600px){
+            font-size: 23px;
+        }
+        @media (max-width:400px){
+            font-size: 18px;
+        }
 
+    }
+    .muammo_block{
+        width: 90%;
+        height: 500px;
+        @include row;
+        p{
+            text-align: start;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 400px;
+            color: #212529;
+            font-family: "Roboto",Sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5em;
+            @media (max-width:1020px){
+                width: 100%;
+            }
+            @media (max-width:720px){
+                font-size: 14px;
+            }
+            @media (max-width:520px){
+                font-size: 12px;
+            }
+            span:last-child{
+                margin-left: 10px;
+            }
+            img{
+                margin-left: -5px;
+            }
+        }
+        @media (max-width:1020px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 800px;
+        }
+    }
+}
+.kimlar{
+    @include column;
+    width: 100%;
+    height: auto;
+    background-image: url('https://tedbook.uz/wp-content/uploads/khdv-1.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0 0 0 0 !important;
+    z-index: -2;
+    @media (max-width:768px){
+        height: 2000px;
+    }
+    @media (max-width:568px){
+        height: 2400px;
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.61);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    p{
+        color: #FFF;
+        font-family: "Roboto",Sans-serif;
+        font-size: 53px;
+        font-weight: 900;
+        text-align: center;
+        z-index: 99999;
+        @media (max-width:970px){
+            font-size: 43px;
+        }
+        @media (max-width:570px){
+            font-size: 33px;
+        }
+    }
+    .kimlar_block{
+        width: 90%;
+        height: 250px;
+        color: #FFF;
+        font-family: "Roboto",Sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5em;
+        @media (max-width:768px){
+            height: 700px;
+        }
+    }
+}
 
+.savollar{
+    height: auto;
+    background-color:rgba(247, 243, 243, 0.945);
+    p{
+        color: #212529;
+        font-family: "Roboto",Sans-serif;
+        font-size: 53px;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 15px;
+        @media (max-width:478px){
+            font-size: 33px;
+        }
+    }
+    .chap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        left: 5%;
+        height: 220px;
+        background-image: url('https://tedbook.uz/wp-content/uploads/vopros.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (max-width:1292px){
+            justify-content: center;
+            width: 80%;
+        }
+        @media (max-width:575px){
+            width: 90% !important;
+            height: 120px;
+        }
+        @media (max-width:475px){
+            height: 100px;
+            margin-top: 20px;
+            padding: 0;
+        }
+        @media (max-width:275px){
+            height: 60px;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin-left: 40px;
+            width: 70%;
+            color: #212529;
+            font-family: "Roboto",Sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: start;;
+            @media (max-width:1198px){
+                font-size: 18px;
+                margin-top: -10px;
+            }
+            @media (max-width:1072px){
+                font-size: 16px;
+                margin-top: -10px;
+            }
+            @media (max-width:991px){
+                font-size: 18px;
+                margin-top: 0px;
+            }
+            @media (max-width:768px){
+                width: 85%;
+                font-size: 18px;
+                margin-top: -20px;
+            }
+            @media (max-width:678px){
+                width: 85%;
+                font-size: 14px;
+                margin-top: -70px;
+            }
+            @media (max-width:575px){
+                width: 80%;
+                font-size: 13px;
+                margin-top: 20px;
+                margin-left: -30px;
+            }
+            @media (max-width:538px){
+                width: 85%;
+                font-size: 12px;
+                margin-top: 0px;
+            }
+            @media (max-width:478px){
+                width: 75%;
+                font-size: 11px;
+                margin-top: 30px;
+                margin-left: -20px;
+            }
+            @media (max-width:410px){
+                width: 80%;
+                font-size: 11px;
+                margin-top: 10px;
+                margin-left: 0;
+            }
+            @media (max-width:380px){
+                width: 80%;
+                font-size: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    // .child{
+    //     height: 240px !important;
+    // }
+    .row{
+        height: 180px;
+        @media (max-width:675px){
+            height: 160px;
+            margin: 0;
+            padding: 0;
+        }
+        @media (max-width:475px){
+            height: 80px;
+            margin: 0;
+            padding: 0;
+        }
+        @media (max-width:275px){
+            height: 40px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .text-center{
+        @media (max-width:768px){
+            margin: 5px !important;
+            padding: 5px !important;
+        }
+    }
+    .buyurtma_tugma_2{
+        @media (max-width:768px){
+            margin: 0;
+            padding: 0;
+        }
+        @media (max-width:475px){
+            margin: 50px;
+            padding: 0;
+        }
+    }
+    .h-auto{
+        height: 220px !important;
+        background-size: cover !important;
+        @media (max-width:678px){
+            height: 180px !important;
+            padding-top: 50px;
+        }
+        @media (max-width:578px){
+            height: 140px !important;
+            padding-top: 10px;
+            margin: 0 !important;
+        }
 
-
-
-
+    }
+    .ong{    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+        position: relative;
+        right: -38%;
+        height: 180px;
+        background-image: url('https://tedbook.uz/wp-content/uploads/otvet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        p{
+            margin-left: 40px;
+            width: 70%;
+            color: #212529;
+            font-family: "Roboto",Sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: end;
+            @media (max-width:1198px){
+                font-size: 18px;
+                margin-top: -10px;
+            }
+            @media (max-width:1072px){
+                font-size: 16px;
+                margin-top: -10px;
+            }
+            @media (max-width:991px){
+                font-size: 18px;
+                margin-top: 0px;
+            }
+            @media (max-width:768px){
+                width: 85%;
+                font-size: 18px;
+                margin-top: -20px;
+            }
+            @media (max-width:678px){
+                width: 85%;
+                font-size: 14px;
+                margin-top: -70px;
+            }
+            @media (max-width:575px){
+                width: 80%;
+                font-size: 13px;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            @media (max-width:538px){
+                width: 85%;
+                font-size: 12px;
+                margin-top: 0px;
+            }
+            @media (max-width:478px){
+                width: 75%;
+                font-size: 11px;
+                margin-top: 0px;
+                margin-left:30px;
+            }
+            @media (max-width:410px){
+                width: 80%;
+                font-size: 11px;
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            @media (max-width:380px){
+                width: 80%;
+                font-size: 10px;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width:1292px){
+            width: 80%;
+        }
+        @media (max-width:991px){
+            right: -5%;
+        }
+        @media (max-width:768px){
+            right: -5%;
+        }
+        @media (max-width:575px){
+            width: 90% !important;
+            height: 120px;
+        }
+        @media (max-width:475px){
+            height: 80px;
+            margin-top:30px;
+            padding: 0;
+        }
+        @media (max-width:275px){
+            height: 40px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
 
 
 
@@ -736,17 +1223,15 @@ li{
 .section_two_books{
     width: 1000px;
     height: 500px;
-    @media (max-width:1000px){
-        width: 500px;
-    }
+    margin-left: -150px;
+    margin-top: -40px;  
     @media (max-width:500px){
-        width: 400px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 }
 .tedbook_eng {
     @media (max-width:1000px){
-        width: 250px;
+        width: 350px;
     }
     // @media (max-width:320px){
     //     // width: 150px;
@@ -767,7 +1252,10 @@ li{
     //     left: 30px;
     // }
     @media (max-width:500px){
-        width: 200px;
+        width: 300px;
+    }
+    @media (max-width:400px){
+        width: 250px;
     }
     // @media (max-width:280px){
     //     width: 150px;
@@ -812,6 +1300,7 @@ li{
     // width: 1300px;
     background: url(../img/orbita-1.png) no-repeat;
     background-position: center;
+
     height: 900px;
     width: 100%;
     background-size: cover;
@@ -865,8 +1354,18 @@ li{
         width: 410px;
         background-size: cover;
     }
-}
 
+    height: 800px;
+    width: 120%;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: -20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 
 
@@ -1287,6 +1786,9 @@ input[type="checkbox"]:checked + label::before {
     height: 70px;
     margin-top: 100px;
     margin-bottom: 50px;
+    @media  (max-width:991px) {
+        width: 600px;
+    }
     @media  (max-width:767px) {
         width: calc(250px + (250+250 *0.7) *((100vw - 320px)/1280));
         font-size: calc(25px + (12+12 *0.7) *((100vw - 320px)/1280));
@@ -1306,7 +1808,7 @@ input[type="checkbox"]:checked + label::before {
     background-color: #3ECC14;
     border-radius: 30px;
     width: 400px;
-    height: 70px;
+    height: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
     @media  (max-width:767px) {
@@ -1832,6 +2334,8 @@ input[type="checkbox"]:checked + label::before {
         width: 100px;
     }
 }
+
+
 
 
 .section_video h2{
