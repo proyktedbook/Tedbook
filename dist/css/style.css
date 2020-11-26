@@ -1,54 +1,11 @@
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  bottom: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.header_bg {
-  background: url(../img/header_bg.jpg) no-repeat center/cover;
-  height: 100vh;
-}
-
-.section_header h2 {
-  color: #FFF;
-  font-size: 45px;
-  font-weight: 300;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  margin-top: 150px;
-}
-
-.header_span {
-  font-weight: 900;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  font-size: 45px;
-  color: #FFF;
-}
-
-.buyurtma_tugma_button {
-  position: relative;
-  bottom: 100px;
-}
-
-.section_header p {
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: 14px;
-  color: #FFF;
-}
-
-.section_header img {
-  margin-top: 80px;
-  width: 550px;
+.container-fluid {
+  height: auto;
+  overflow: hidden;
+  padding: 0 0 0 0 !important;
 }
 
 .padarka {
@@ -88,7 +45,8 @@ body {
   background-image: url("../img/comp-bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: -40px;
+  margin-left: -100px;
   overflow: hidden;
   position: relative;
   display: -webkit-box;
@@ -489,10 +447,12 @@ li {
 .section_two_books_block {
   background: url(../img/orbita-1.png) no-repeat;
   background-position: center;
-  height: 900px;
-  width: 100%;
+  height: 800px;
+  width: 120%;
   background-size: cover;
   margin-top: 20px;
+  margin-left: -20px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,21 +460,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 800px;
-  width: 120%;
-  background-size: cover;
-  margin-top: 20px;
-  margin-left: -20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -604,7 +552,7 @@ input[type="checkbox"]:checked + label::before {
 .form_rus_label,
 .checkbox_ing_label {
   color: #212529;
-  cursor: pointer;
+  cursor: default;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 500;
@@ -719,20 +667,6 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 50px;
 }
 
-.buyurtma_tugma_3 {
-  border: none;
-  text-transform: uppercase;
-  font-size: 37px;
-  font-weight: 500;
-  line-height: 1.6em;
-  color: #fff;
-  background-color: #3ECC14;
-  border-radius: 50px;
-  width: 350px;
-  height: 70px;
-  position: relative;
-}
-
 .section_form_labels_block {
   margin-top: 150px;
 }
@@ -745,13 +679,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .buyurtma_tugma_2:hover {
-  color: #000;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.buyurtma_tugma_3:hover {
   color: #000;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -846,26 +773,9 @@ input[type="checkbox"]:checked + label::before {
   font-weight: 500;
 }
 
-.section_block_3 img {
-  width: 183px;
-}
-
-.section_video h2 {
-  color: #212529;
-  font-family: "Roboto",Sans-serif;
-  font-size: 53px;
-  font-weight: 900;
-}
-
 @media (max-width: 1486px) {
   .comp_1 {
     left: 20%;
-  }
-}
-
-@media (max-width: 1300px) {
-  .section_two_books_block {
-    width: 1300px;
   }
 }
 
@@ -889,12 +799,6 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 1200px) {
-  .section_two_books_block {
-    width: 1200px;
-  }
-}
-
 @media (max-width: 1198px) {
   .savollar .chap p {
     font-size: 18px;
@@ -904,12 +808,6 @@ input[type="checkbox"]:checked + label::before {
   .savollar .ong p {
     font-size: 18px;
     margin-top: -10px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .section_two_books_block {
-    width: 1100px;
   }
 }
 
@@ -945,16 +843,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 1024px) {
-  .header_bg {
-    height: 50vh;
-    padding-bottom: 250px;
-  }
-
-  .section_header img {
-    margin-top: 150px;
-    width: 400px;
-  }
-
   .form_rus_label::before {
     left: 210px;
     top: -34px;
@@ -973,11 +861,6 @@ input[type="checkbox"]:checked + label::before {
   .checkbox_ing_label::after {
     left: 200px;
     top: -34px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 70px;
   }
 
   .section_bg {
@@ -1013,19 +896,9 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 1000px) {
-  .tedbook_eng {
-    width: 350px;
-  }
-
+  .tedbook_eng,
   .tedbook_rus {
-    width: 250px;
-  }
-
-  .section_two_books_block {
-    width: 1000px;
-    height: 1000px;
-    background-size: cover;
-    background-position: -600px;
+    width: 350px;
   }
 }
 
@@ -1067,14 +940,6 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 900px) {
-  .section_two_books_block {
-    background-size: cover;
-    width: 900px;
-    height: 1000px;
-  }
-}
-
 @media (max-width: 886px) {
   .compania {
     height: 800px;
@@ -1089,23 +954,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 800px) {
-  .header_bg {
-    height: 60vh;
-  }
-
-  .section_header img {
-    width: 200px;
-    margin-top: 150px;
-  }
-
   .muammo p {
     font-size: 33px;
-  }
-
-  .section_two_books_block {
-    width: 800px;
-    height: 900px;
-    background-position: -400px;
   }
 
   .form_rus_label::before {
@@ -1128,11 +978,6 @@ input[type="checkbox"]:checked + label::before {
     top: -34px;
   }
 
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-
   .section_bg {
     height: 35vh;
   }
@@ -1151,13 +996,6 @@ input[type="checkbox"]:checked + label::before {
 
   .section_8_circle3 p {
     margin-right: 0px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .section_header h2 {
-    margin-top: 50px;
-    font-size: 25px;
   }
 }
 
@@ -1185,15 +1023,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 768px) {
-  .header_bg {
-    height: 70vh;
-  }
-
-  .section_header img {
-    width: 320px;
-    margin-top: 200px;
-  }
-
   .kimlar {
     height: 2000px;
   }
@@ -1248,33 +1077,12 @@ input[type="checkbox"]:checked + label::before {
     top: -34px;
   }
 
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 120px;
-  }
-
   .section_bg {
     height: 40vh;
   }
 }
 
 @media (max-width: 767px) {
-  .section_header h2 {
-    font-size: calc(20px + (25+25 *0.7) *((100vw - 320px)/1280));
-  }
-
-  .header_span {
-    font-size: calc(25px + (20+20 *0.7) *((100vw - 320px)/1280));
-  }
-
-  .section_header p {
-    font-size: calc(15px + (10+10 *0.7) *((100vw - 320px)/1280));
-  }
-
-  .section_header img {
-    width: calc(150px + (550+550 *0.7) *((100vw - 320px)/1280));
-  }
-
   .section-title h1 {
     font-size: calc(24px + (46+46 *0.7) *((100vw - 320px)/1280));
   }
@@ -1366,11 +1174,6 @@ input[type="checkbox"]:checked + label::before {
     font-size: calc(25px + (12+12 *0.7) *((100vw - 320px)/1280));
   }
 
-  .buyurtma_tugma_3 {
-    width: calc(200px + (250+250 *0.7) *((100vw - 320px)/1280));
-    font-size: calc(20px + (17+17 *0.7) *((100vw - 320px)/1280));
-  }
-
   .section_seven_group h1 {
     font-size: calc(25px + (28+28 *0.7) *((100vw - 320px)/1280));
   }
@@ -1444,30 +1247,7 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .section_block_3 span {
-    font-size: calc(13px + (7+7 *0.7) *((100vw - 320px)/1280));
-  }
-
-  .section_block_3 img {
-    font-size: calc(100px + (83+83 *0.7) *((100vw - 320px)/1280));
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .section_header h2 {
-    position: relative;
-    margin-top: 100px;
-    right: 90px;
-  }
-
-  .section_header p {
-    position: relative;
-    right: 90px;
-  }
-
-  .section_header img {
-    margin-top: 0px;
-    position: relative;
-    bottom: 0px;
+    font-size: calc(12px + (10+10 *0.7) *((100vw - 320px)/1280));
   }
 }
 
@@ -1505,14 +1285,6 @@ input[type="checkbox"]:checked + label::before {
 
   .muammo .muammo_block p {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 700px) {
-  .section_two_books_block {
-    width: 700px;
-    height: 700px;
-    background-position: -300px;
   }
 }
 
@@ -1563,21 +1335,6 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 700px;
-  }
-
-  .section_header h2 {
-    font-size: 25px;
-  }
-
-  .section_header img {
-    margin-top: -20px;
-  }
-}
-
 @media (max-width: 640px) {
   .form_rus_label::before {
     left: 110px;
@@ -1601,14 +1358,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 600px) {
-  .header_bg {
-    height: 50vh;
-  }
-
-  .section_header img {
-    margin-top: -30px;
-  }
-
   .padarka .padarka_lorem .padarka_last {
     font-size: 16px;
     margin-left: 5px;
@@ -1616,11 +1365,6 @@ input[type="checkbox"]:checked + label::before {
 
   .muammo p {
     font-size: 23px;
-  }
-
-  .section_two_books_block {
-    width: 600px;
-    height: 600px;
   }
 
   .form_rus_label::before {
@@ -1657,13 +1401,6 @@ input[type="checkbox"]:checked + label::before {
 
   .section_8_circle3 p {
     margin-right: 23px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
   }
 }
 
@@ -1738,10 +1475,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 540px) {
-  .section_header img {
-    margin-top: 30px;
-  }
-
   .section-title h2 {
     font-size: 25px;
   }
@@ -1768,11 +1501,6 @@ input[type="checkbox"]:checked + label::before {
   .checkbox_ing_label::after {
     left: 100px;
     top: -34px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 125px;
   }
 
   .section_seven_group p {
@@ -1838,16 +1566,9 @@ input[type="checkbox"]:checked + label::before {
     margin-top: 100px;
   }
 
-  .tedbook_eng {
-    width: 300px;
-  }
-
+  .tedbook_eng,
   .tedbook_rus {
-    width: 200px;
-  }
-
-  .section_two_books_block {
-    width: 500px;
+    width: 300px;
   }
 }
 
@@ -1879,10 +1600,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 480px) {
-  .section_header img {
-    margin-top: 30px;
-  }
-
   .span {
     width: 110px;
   }
@@ -1905,11 +1622,6 @@ input[type="checkbox"]:checked + label::before {
   .checkbox_ing_label::after {
     left: 85px;
     top: -34px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
   }
 
   .block_5 {
@@ -1971,18 +1683,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 414px) {
-  .section_header h2 {
-    margin-top: 150px;
-  }
-
-  .section_header p {
-    margin-bottom: 20px;
-  }
-
-  .section_header img {
-    margin-top: 30px;
-  }
-
   .section-title h2 {
     font-size: 18px;
   }
@@ -2026,19 +1726,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 412px) {
-  .section_header h2 {
-    margin-top: 100px;
-  }
-
-  .section_header img {
-    margin-top: 30px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 170px;
-  }
-
   .section_bg {
     height: 30vh;
   }
@@ -2124,13 +1811,9 @@ input[type="checkbox"]:checked + label::before {
     font-size: 18px;
   }
 
-  .tedbook_eng {
+  .tedbook_eng,
+  .tedbook_rus {
     width: 250px;
-  }
-
-  .section_two_books_block {
-    width: 410px;
-    background-size: cover;
   }
 }
 
@@ -2149,18 +1832,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 384px) {
-  .header_bg {
-    height: 80vh;
-    padding-bottom: 0px;
-  }
-
   .span {
     width: 131px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 120px;
   }
 }
 
@@ -2179,14 +1852,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 375px) {
-  .section_header h2 {
-    margin-top: 75px;
-  }
-
-  .section_header img {
-    margin-top: 0px;
-  }
-
   .span {
     font-size: 17px;
     width: 100px;
@@ -2210,15 +1875,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 360px) {
-  .header_bg {
-    height: 90vh;
-    padding-bottom: 0px;
-  }
-
-  .section_header img {
-    margin-top: -30px;
-  }
-
   .section-title h2 {
     font-size: 18px;
   }
@@ -2251,18 +1907,6 @@ input[type="checkbox"]:checked + label::before {
     left: 60px;
   }
 
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 100px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 70px;
-    position: relative;
-    top: 150px;
-  }
-
   .block_5 {
     margin-right: 40px;
   }
@@ -2286,88 +1930,7 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 326px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media (max-width: 325px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media (max-width: 324px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media (max-width: 323px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media (max-width: 322px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media (max-width: 321px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
-  }
-}
-
 @media (max-width: 320px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 550px;
-  }
-
-  .section_header h2 {
-    margin-top: 75px;
-  }
-
   .section-title h2 {
     font-size: 13px;
   }
@@ -2396,11 +1959,6 @@ input[type="checkbox"]:checked + label::before {
   .checkbox_ing_label::after {
     top: -34px;
     left: 50px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 150px;
   }
 
   .block_5 {
@@ -2436,20 +1994,7 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .section_block_3 h1 {
-    font-size: 10px;
-  }
-
-  .section_block_3 span {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 300px) {
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 70px;
-    position: relative;
-    top: 150px;
+    font-size: 13px;
   }
 }
 
@@ -2460,29 +2005,10 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 280px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 0px;
-  }
-
-  .section_header h2 {
-    margin-top: 95px;
-  }
-
   .span {
     font-size: 13px;
     width: 110px;
     margin-top: 15px;
-  }
-
-  .section_two_books_block {
-    width: 410px;
-    background-size: cover;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 170px;
   }
 
   .block_5 {
@@ -2561,22 +2087,7 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 241px) {
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 110px;
-    width: 150px;
-    height: 25px;
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 240px) {
-  .header_bg {
-    height: 100vh;
-    padding-bottom: 450px;
-  }
-
   .span {
     font-size: 13px;
     width: 80px;
@@ -2593,14 +2104,6 @@ input[type="checkbox"]:checked + label::before {
 
   .buyurtma_tugma_2 {
     width: 200px;
-  }
-
-  .buyurtma_tugma_3 {
-    position: relative;
-    top: 110px;
-    width: 150px;
-    height: 25px;
-    font-size: 15px;
   }
 
   .section_seven_group h3 {
@@ -2633,11 +2136,5 @@ input[type="checkbox"]:checked + label::before {
 @media (width: 767px) {
   .section-title h2 {
     font-size: 15px;
-  }
-}
-
-@media (width: 240px) {
-  .section_block_3 img {
-    width: 100px;
   }
 }
