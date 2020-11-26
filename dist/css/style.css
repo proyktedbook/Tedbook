@@ -251,6 +251,94 @@ li {
   line-height: 1.5em;
 }
 
+.savollar {
+  height: auto;
+  background-color: rgba(247, 243, 243, 0.945);
+}
+
+.savollar p {
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 53px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.savollar .chap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  left: 5%;
+  height: 220px;
+  background-image: url("https://tedbook.uz/wp-content/uploads/vopros.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.savollar .chap p {
+  margin-left: 40px;
+  width: 70%;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.savollar .row {
+  height: 180px;
+}
+
+.savollar .h-auto {
+  height: 220px !important;
+  background-size: cover !important;
+}
+
+.savollar .ong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  position: relative;
+  right: -38%;
+  height: 180px;
+  background-image: url("https://tedbook.uz/wp-content/uploads/otvet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.savollar .ong p {
+  margin-left: 40px;
+  width: 70%;
+  color: #212529;
+  font-family: "Roboto",Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: end;
+}
+
 .section-title h1 {
   margin-top: 50px;
   font-family: 'Roboto', sans-serif;
@@ -571,7 +659,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3ECC14;
   border-radius: 30px;
   width: 400px;
-  height: 70px;
+  height: 60px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -688,6 +776,19 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 1292px) {
+  .savollar .chap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+
+  .savollar .ong {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1206px) {
   .comp_1 {
     width: 700px !important;
@@ -695,10 +796,34 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 1198px) {
+  .savollar .chap p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .savollar .ong p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+}
+
 @media (max-width: 1086px) {
   .comp_1 {
     width: 700px !important;
     left: 15%;
+  }
+}
+
+@media (max-width: 1072px) {
+  .savollar .chap p {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+
+  .savollar .ong p {
+    font-size: 16px;
+    margin-top: -10px;
   }
 }
 
@@ -771,6 +896,26 @@ input[type="checkbox"]:checked + label::before {
   .tedbook_eng,
   .tedbook_rus {
     width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .savollar .chap p {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong p {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong {
+    right: -5%;
+  }
+
+  .buyurtma_tugma {
+    width: 600px;
   }
 }
 
@@ -881,6 +1026,32 @@ input[type="checkbox"]:checked + label::before {
 
   .kimlar .kimlar_block {
     height: 700px;
+  }
+
+  .savollar .chap p {
+    width: 85%;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .savollar .text-center {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+
+  .savollar .buyurtma_tugma_2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .savollar .ong {
+    right: -5%;
   }
 
   .form_rus_label::before {
@@ -1134,6 +1305,33 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 678px) {
+  .savollar .chap p {
+    width: 85%;
+    font-size: 14px;
+    margin-top: -70px;
+  }
+
+  .savollar .h-auto {
+    height: 180px !important;
+    padding-top: 50px;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 14px;
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 675px) {
+  .savollar .row {
+    height: 160px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (max-width: 640px) {
   .form_rus_label::before {
     left: 110px;
@@ -1227,6 +1425,40 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 578px) {
+  .savollar .h-auto {
+    height: 140px !important;
+    padding-top: 10px;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .savollar .chap {
+    width: 90% !important;
+    height: 120px;
+  }
+
+  .savollar .chap p {
+    width: 80%;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .savollar .ong {
+    width: 90% !important;
+    height: 120px;
+  }
+}
+
 @media (max-width: 570px) {
   .kimlar p {
     font-size: 33px;
@@ -1303,6 +1535,20 @@ input[type="checkbox"]:checked + label::before {
 
   .section_8_circle3 p {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 538px) {
+  .savollar .chap p {
+    width: 85%;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .savollar .ong p {
+    width: 85%;
+    font-size: 12px;
+    margin-top: 0px;
   }
 }
 
@@ -1385,6 +1631,51 @@ input[type="checkbox"]:checked + label::before {
 
   .block_7 {
     margin-right: 110px;
+  }
+}
+
+@media (max-width: 478px) {
+  .savollar p {
+    font-size: 33px;
+  }
+
+  .savollar .chap p {
+    width: 75%;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+
+  .savollar .ong p {
+    width: 75%;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 475px) {
+  .savollar .chap {
+    height: 100px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .savollar .row {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .buyurtma_tugma_2 {
+    margin: 50px;
+    padding: 0;
+  }
+
+  .savollar .ong {
+    height: 80px;
+    margin-top: 30px;
+    padding: 0;
   }
 }
 
@@ -1496,6 +1787,22 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media (max-width: 410px) {
+  .savollar .chap p {
+    width: 80%;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 400px) {
   .muammo p {
     font-size: 18px;
@@ -1524,6 +1831,20 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 384px) {
   .span {
     width: 131px;
+  }
+}
+
+@media (max-width: 380px) {
+  .savollar .chap p {
+    width: 80%;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .savollar .ong p {
+    width: 80%;
+    font-size: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -1718,6 +2039,26 @@ input[type="checkbox"]:checked + label::before {
 
   .section_8_circle5 p {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 275px) {
+  .savollar .chap {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .row {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .savollar .ong {
+    height: 40px;
+    margin: 0;
+    padding: 0;
   }
 }
 
