@@ -69,14 +69,18 @@ var x = setInterval(function() {
   // Output the result in an element with id="demo"
 //   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
 //   + minutes + "m " + seconds + "s ";
-  let kun = document.querySelector('.kun');
-    kun.innerHTML = days;
-    let soat = document.querySelector('.soat');
-    soat.innerHTML = hours;
-    let daqiqa = document.querySelector('.daqiqa');
-    daqiqa.innerHTML = minutes;
-    let soniya = document.querySelector('.soniya');
-    soniya.innerHTML = seconds;
+  let kun = document.querySelectorAll('.kun');
+    kun[0].innerHTML = days;
+    kun[1].innerHTML = days;
+    let soat = document.querySelectorAll('.soat');
+    soat[0].innerHTML = hours;
+    soat[1].innerHTML = hours;
+    let daqiqa = document.querySelectorAll('.daqiqa');
+    daqiqa[0].innerHTML = minutes;
+    daqiqa[1].innerHTML = minutes;
+    let soniya = document.querySelectorAll('.soniya');
+    soniya[0].innerHTML = seconds;
+    soniya[1].innerHTML = seconds;
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
