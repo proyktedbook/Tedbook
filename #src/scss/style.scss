@@ -1306,7 +1306,7 @@ li{
     background-size: cover;
     // background-position:-280px 50px;
     margin-top: 20px;
-    @include center;
+    // @include center;
 
     @media (max-width:1300px){
         width: 1300px;
