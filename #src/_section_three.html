@@ -10,22 +10,22 @@
         <section class="section_time mb-5">
             <div class="mt-5 mr-auto ml-auto pb-5">
                 <h2 class="d-flex justify-content-center section_time_shoshiling">SHOSHILING!</h2>
-                <h2 class="d-flex justify-content-center section_time_chegirma">CHEGIRMA TUGASHIGA OZ QOLDI:</h2>
+                <h2 class="d-flex justify-content-center section_time_chegirma">DIDLINE TUGASHIGA OZ QOLDI:</h2>
                 <div class="countdown d-flex justify-content-center  mt-5 section_times">
                     <div class="time-section mr-4 col-2">
-                        <h1 class="units d-flex justify-content-center">01</h1>
+                        <h1 class="units d-flex justify-content-center kun"></h1>
                         <span class="count d-flex justify-content-center" id="seconds">KUNLAR</span>
                     </div>
                     <div class="time-section  mr-4 col-2">
-                        <h1 class="units d-flex justify-content-center">11</h1>
+                        <h1 class="units d-flex justify-content-center soat"></h1>
                         <span class="count  d-flex justify-content-center" id="seconds">SOAT</span>
                     </div>
                     <div class="time-section  mr-4 col-2">
-                        <h1 class="units d-flex justify-content-center">38</h1>
+                        <h1 class="units d-flex justify-content-center daqiqa"></h1>
                         <span class="count  d-flex justify-content-center" id="seconds">DAQIQALAR</span>
                     </div>
                     <div class="time-section  mr-4 col-2">
-                        <h1 class="units d-flex justify-content-center">00</h1>
+                        <h1 class="units d-flex justify-content-center soniya">02</h1>
                         <span class="count d-flex justify-content-center" id="seconds">SONIYALAR</span>
                     </div>
                 </div>
@@ -33,4 +33,61 @@
         </section>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 30, 2020 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+//   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+//   + minutes + "m " + seconds + "s ";
+  let kun = document.querySelectorAll('.kun');
+    kun[0].innerHTML = days;
+    kun[1].innerHTML = days;
+    let soat = document.querySelectorAll('.soat');
+    soat[0].innerHTML = hours;
+    soat[1].innerHTML = hours;
+    let daqiqa = document.querySelectorAll('.daqiqa');
+    daqiqa[0].innerHTML = minutes;
+    daqiqa[1].innerHTML = minutes;
+    let soniya = document.querySelectorAll('.soniya');
+    soniya[0].innerHTML = seconds;
+    soniya[1].innerHTML = seconds;
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
 <!-- /.section_three -->
