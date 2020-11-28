@@ -1,1 +1,1 @@
-$("#phone1").mask("+999 99 999-99-99"),$("#phone2").mask("+999 99 999-99-99");
+$.mask.definitions[9]=!1,$.mask.definitions[5]="[0-9]",$("#phone_4").mask("+998 55 555-55-55"),$("#phone2").mask("+998 55 555-55-55");
