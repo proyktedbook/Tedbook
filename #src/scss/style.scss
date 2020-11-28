@@ -1,5 +1,7 @@
 @import "_miksin.scss";
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -7,6 +9,134 @@ body{
     height: auto;
     overflow: hidden;
     padding: 0 0 0 0 !important;
+}
+.section_header{
+    width: 120%;
+    height: auto;
+    background-image: url('../img/header_bg.jpg');
+    background-repeat: no-repeat;
+    padding-bottom: 10px !important;
+    .header_bg{
+        padding-bottom: 50px;
+    }
+    .logo{
+        position: absolute;
+        right: 5%;
+    }
+    .featurette {
+        margin-top: 20px;
+    }
+    .dis{
+        @media (max-width:767px){
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+        }
+    }
+    .lead{
+        margin-left: 10px !important;
+        width: 80%;
+        color: #FFF;
+        font-family: "Roboto",Sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        
+    }
+    .colxs{
+        @media (max-width:767px){
+            margin: 0 !important;
+            padding: 0 !important;
+            margin-left: 40px !important;
+        }
+        @media (max-width:575px){
+            width: 60%;
+            margin-left: 80px !important;
+        }
+            @media (max-width:480px){
+                width: 60%;
+                margin-left: 60px !important;
+            }
+    }
+    .aaaa{
+        padding-top: 60px !important;
+        @media (max-width:575px){
+            // margin: 10px !important;
+            // padding: 10px !important;
+        }
+    }
+    .featurette-heading{
+        width: 80%;
+        color: #FFF;
+        font-family: "Roboto",Sans-serif;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        margin-left: 20px;
+        @media (max-width:820px){
+            font-size: 38px;
+        }
+        @media (max-width:578px){
+            font-size: 32px;
+        }
+    }
+    .buyurtma_tugma{
+        width: 300px;
+        font-size: 25px;
+        left: 10%;
+        position: relative;
+        @media (max-width:857px){
+            margin-top:20px;
+            left: 20%;
+        }
+        @media (max-width:767px){
+            top: 20px;
+            margin-top:20px;
+            left: 20%;
+            z-index: 999;
+        }
+        @media (max-width:480px){
+            margin-top:20px;
+            left: 10%;
+        }
+    }
+}
+.cheg{
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    z-index: 1;
+    @media (max-width:991px){
+        right: 15%;
+        top: 30%;
+    }
+    @media (max-width:878px){
+        right: 14%;
+        top: 28%;
+    }
+    @media (max-width:757px){
+        right: 18%;
+        top: 22%;
+    }
+    @media (max-width:575px){
+        right:25%;
+        top: 15%;
+    }
+    @media (max-width:405px){
+        margin-top:0px;
+        right: 30%;
+    }
+    img{
+        @media (max-width:575px){
+            width: 70px;
+            height: 80px;
+        }
+        @media (max-width:405px){
+            width: 50px;
+            height: 60px;
+        }
+    }
 }
 // .header{
 //     width: 100% ;

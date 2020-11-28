@@ -1,1 +1,1 @@
-var element1=document.getElementById("phone1"),maskOptions1={mask:"+{998} (99) 000-00-00"},mask1=IMask(element1,maskOptions1),element=document.getElementById("phone2"),maskOptions={mask:"+{998} (99) 000-00-00"},mask=IMask(element,maskOptions);
+$("#phone1").mask("+999 99 999-99-99"),$("#phone2").mask("+999 99 999-99-99");
