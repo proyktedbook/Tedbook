@@ -285,7 +285,7 @@ li {
           justify-content: space-evenly;
   width: 100%;
   height: auto;
-  background-image: url("https://tedbook.uz/wp-content/uploads/khdv-1.jpg");
+  background-image: url("../img/khdv-1.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,7 +355,7 @@ li {
   position: relative;
   left: 5%;
   height: 220px;
-  background-image: url("https://tedbook.uz/wp-content/uploads/vopros.png");
+  background-image: url("../img/vopros.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -397,7 +397,7 @@ li {
   position: relative;
   right: -38%;
   height: 180px;
-  background-image: url("https://tedbook.uz/wp-content/uploads/otvet.png");
+  background-image: url("../img/otvet.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1287,6 +1287,10 @@ input[type="checkbox"]:checked + label::before {
     margin-top: 20px;
     left: 20%;
     z-index: 999;
+  }
+
+  .muammo p {
+    font-size: calc(15px + (25+25 *0.7) *((100vw - 320px)/1280));
   }
 
   .section-title h1 {
@@ -2489,6 +2493,16 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .section_bg h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 365px) {
+  .section_bg {
+    height: 48vh;
+  }
+
+  .section_bg h1 {
     font-size: 20px;
   }
 }
