@@ -141,3 +141,14 @@ $("#phone2").mask("+998 55 555-55-55");
 
 //   // https://api.telegram.org/bot1364313278:AAECPKWEBNsmqQgy4pDCMZPyv3d_OU95WSg/sendmessage?chat_id=1296704087&text=salom
 // }
+
+document.querySelector('#send_button').onclick = function(){
+    let ingilish = document.querySelector('#checkbox_ing');
+    let rus = document.querySelector('#checkbox_rus');
+    if(ingilish.checked  || rus.checked){
+        alert('Buyurtma Rasmilashtirildi');
+    }
+    else{
+        alert('Buyurtma Rasmilashtirilmadi')
+    }
+}
